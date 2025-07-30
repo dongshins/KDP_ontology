@@ -1,6 +1,6 @@
 # KDP Ontology using Protégé 
 
-KDP (Korean-studies Data Platform, https://kdp.aks.ac.kr) Ontology
+KDP (Korean-studies Data Platform, https://kdp.aks.ac.kr) Ontology : Since 2024-12-13 by Dong Shin SEO 
 
 The present specification is mainly based on the document "[Ontology:EKC 2022](https://dh.aks.ac.kr/~hanyang2/wiki/index.php/Ontology:EKC_2022)", originally led by Hyeon KIM in the Center for Digital Humanities at the Academy of Korean Studies.
 
