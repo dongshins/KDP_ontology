@@ -2190,12 +2190,12 @@ foaf:member rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://dh.aks.ac.kr/ontologies/ekc#quantity
-:quantity rdf:type owl:DatatypeProperty ;
-          rdfs:range xsd:string ;
-          rdfs:label "quantity"@en ;
-          skos:example "1필, 5개"@ko ;
-          skos:note "수량"@ko .
+###  https://kdp.aks.ac.kr/ontology/kdp_ontology#quantity
+<https://kdp.aks.ac.kr/ontology/kdp_ontology#quantity> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:range xsd:string ;
+                                                       rdfs:label "quantity"@en ;
+                                                       skos:example "1필, 5개"@ko ;
+                                                       skos:note "수량"@ko .
 
 
 #################################################################
