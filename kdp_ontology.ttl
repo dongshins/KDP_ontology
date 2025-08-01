@@ -1,7 +1,7 @@
 @prefix : <http://dh.aks.ac.kr/ontologies/ekc#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix edm: <http://www.europeana.eu/schemas/edm/> .
-@prefix kdp: <https://kdp.aks.ac.kr/ontology#> .
+@prefix kdp: <https://kdp.aks.ac.kr/kdp_ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -13,16 +13,16 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://dh.aks.ac.kr/ontologies/ekc#> .
 
-<https://kdp.aks.ac.kr/ontology#> rdf:type owl:Ontology ;
-                                   dc:creator "Dong Shin SEO"@en ,
-                                              "서동신"@ko ;
-                                   dc:title "KDP (Korean-studies Data Platform) Ontology"@en ;
-                                   dcterms:issued "2017-03-29T18:44:00+09:00"^^xsd:dateTime ;
-                                   dcterms:modified "2025-07-27T06:50:09+09:00"^^xsd:dateTime ;
-                                   rdfs:comment "The present specification is mainly based on the document \\\"Ontology:EKC 2022\\\", originally led by Hyeon Kim in the Center for Digital Humanities at the Academy of Korean Studies." ;
-                                   rdfs:seeAlso "https://dh.aks.ac.kr/~hanyang2/wiki/index.php/Ontology:EKC_2022" ,
-                                                "https://github.com/dongshins/EKC_ontology" ,
-                                                "https://github.com/dongshins/EKC_ontology_advanced" .
+<https://kdp.aks.ac.kr/kdp_ontology> rdf:type owl:Ontology ;
+                                      dc:creator "Dong Shin SEO"@en ,
+                                                 "서동신"@ko ;
+                                      dc:title "KDP (Korean-studies Data Platform) Ontology"@en ;
+                                      dcterms:issued "2017-03-29T18:44:00+09:00"^^xsd:dateTime ;
+                                      dcterms:modified "2025-07-27T06:50:09+09:00"^^xsd:dateTime ;
+                                      rdfs:comment "The present specification is mainly based on the document \\\"Ontology:EKC 2022\\\", originally led by Hyeon Kim in the Center for Digital Humanities at the Academy of Korean Studies." ;
+                                      rdfs:seeAlso "https://dh.aks.ac.kr/~hanyang2/wiki/index.php/Ontology:EKC_2022" ,
+                                                   "https://github.com/dongshins/EKC_ontology" ,
+                                                   "https://github.com/dongshins/EKC_ontology_advanced" .
 
 #################################################################
 #    Annotation properties
@@ -971,7 +971,7 @@ A는 B로 운반되었다""" .
 ###  http://dh.aks.ac.kr/ontologies/ekc#isAwarded
 :isAwarded rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :E3 ;
-           owl:inverseOf <https://kdp.aks.ac.kr/ontology/kdp_ontology#isAwardedTo> ;
+           owl:inverseOf kdp:isAwardedTo ;
            rdfs:domain :Actor ;
            dc:description "~을 상으로 받다"@ko ;
            rdfs:label "isAwarded"@en ;
@@ -2171,31 +2171,31 @@ foaf:member rdf:type owl:ObjectProperty ;
             skos:scopeNote "Domain : Agent(Actor의 subclasses 중 기관, 단체 등)" .
 
 
-###  https://kdp.aks.ac.kr/ontology/kdp_ontology#isAwardedTo
-<https://kdp.aks.ac.kr/ontology/kdp_ontology#isAwardedTo> rdf:type owl:ObjectProperty ;
-                                                          rdfs:subPropertyOf :E3 ;
-                                                          rdfs:label "isAwardedTo"@en .
+###  https://kdp.aks.ac.kr/kdp_ontology#isAwardedTo
+kdp:isAwardedTo rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :E3 ;
+                rdfs:label "isAwardedTo"@en .
 
 
-###  https://kdp.aks.ac.kr/ontology/kdp_ontology#isConceptionPlaceOf
-<https://kdp.aks.ac.kr/ontology/kdp_ontology#isConceptionPlaceOf> rdf:type owl:ObjectProperty ;
-                                                                  rdfs:subPropertyOf :P1 ;
-                                                                  rdfs:domain :Place ;
-                                                                  rdfs:range :Actor ;
-                                                                  dc:description "~의 수태지이다"@ko ;
-                                                                  rdfs:label "isConceptionPlaceOf"@en .
+###  https://kdp.aks.ac.kr/kdp_ontology#isConceptionPlaceOf
+kdp:isConceptionPlaceOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :P1 ;
+                        rdfs:domain :Place ;
+                        rdfs:range :Actor ;
+                        dc:description "~의 수태지이다"@ko ;
+                        rdfs:label "isConceptionPlaceOf"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://kdp.aks.ac.kr/ontology/kdp_ontology#quantity
-<https://kdp.aks.ac.kr/ontology/kdp_ontology#quantity> rdf:type owl:DatatypeProperty ;
-                                                       rdfs:range xsd:string ;
-                                                       rdfs:label "quantity"@en ;
-                                                       skos:example "1필, 5개"@ko ;
-                                                       skos:note "수량"@ko .
+###  https://kdp.aks.ac.kr/kdp_ontology#quantity
+kdp:quantity rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string ;
+             rdfs:label "quantity"@en ;
+             skos:example "1필, 5개"@ko ;
+             skos:note "수량"@ko .
 
 
 #################################################################
