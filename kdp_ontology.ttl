@@ -17,8 +17,8 @@
                                       dc:creator "Dong Shin SEO"@en ,
                                                  "서동신"@ko ;
                                       dc:title "KDP (Korean-studies Data Platform) Ontology"@en ;
-                                      dcterms:issued "2017-03-29T18:44:00+09:00"^^xsd:dateTime ;
-                                      dcterms:modified "2025-07-27T06:50:09+09:00"^^xsd:dateTime ;
+                                      dcterms:issued "2024-11-28T18:25:00+09:00"^^xsd:dateTime ;
+                                      dcterms:modified "2025-08-02T07:34:57+09:00"^^xsd:dateTime ;
                                       rdfs:comment "The present specification is mainly based on the document \\\"Ontology:EKC 2022\\\", originally led by Hyeon Kim in the Center for Digital Humanities at the Academy of Korean Studies." ;
                                       rdfs:seeAlso "https://dh.aks.ac.kr/~hanyang2/wiki/index.php/Ontology:EKC_2022" ,
                                                    "https://github.com/dongshins/EKC_ontology" ,
